@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ship {
-    private List<Cell> shipCells = new ArrayList<>();
-    private int shipLength;
+    private final List<Cell> shipCells = new ArrayList<>();
+    private final int shipLength;
 
     public Ship(int shipLength) {
         this.shipLength = shipLength;

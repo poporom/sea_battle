@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package sea_battle.service;
-import sea_battle.Sea_battle;
+import sea_battle.SeaBattle;
 import sea_battle.models.Cell;
 import sea_battle.models.Ship;
 import java.util.ArrayList;
@@ -13,9 +13,9 @@ import java.util.Random;
 
 public class ShipCreator {
 
-    private List<Cell> inaccessibleCells = new ArrayList<>();
-    private List<Cell> shipCells = new ArrayList<>();
-    private Random random = new Random();
+    private final List<Cell> inaccessibleCells = new ArrayList<>();
+    private final List<Cell> shipCells = new ArrayList<>();
+    private final Random random = new Random();
 
     public Ship createShip(int shipLength) {
 
@@ -36,8 +36,6 @@ public class ShipCreator {
             }
         } while(added);
 
-        //One cell between ships
-
         for (Cell shipCell : ship.getShipCells()) {
             int digit = shipCell.getDigit();
             int letter = shipCell.getLetter();
@@ -55,15 +53,11 @@ public class ShipCreator {
         return ship;
     }
 
-    public List<Cell> getShipCells() {
-        return shipCells;
-    }
-
     private int getNextNumber() {
-        return random.nextInt(Sea_battle.fieldSize);
+        return random.nextInt(SeaBattle.FIELD_SIZE);
    }
     
     private char getNextChar() {
-        return (char)(random.nextInt(Sea_battle.fieldSize) + 'a');
+        return (char)(random.nextInt(SeaBattle.FIELD_SIZE) + 'a');
     }    
 }

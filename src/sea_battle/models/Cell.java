@@ -47,8 +47,7 @@ public class Cell {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        return hash;
+        return 1;
     }
 
     @Override

@@ -3,7 +3,22 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/sea_battle/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/sea_battle/SeaBattle.java">
           <value>
             <set />
           </value>
@@ -33,6 +48,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/sea_battle/service/ComputerThread.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/sea_battle/service/ComputerTread.java">
           <value>
             <set />
@@ -44,6 +64,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/sea_battle/service/Strike.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/sea_battle/service/UserThread.java">
           <value>
             <set />
           </value>
